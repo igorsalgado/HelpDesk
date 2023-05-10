@@ -1,0 +1,24 @@
+package com.dev.helpdesk.repository;
+
+import com.dev.helpdesk.model.Ticket;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TicketRepository extends MongoRepository<Ticket, String> {
+
+    Page<Ticket> findByUserIdOrderByDateDesc(Pageable pages, String userId); //Busca todos os tickets de um usuario e ordena por data
+
+    Page<Ticket> findByTitleIgnoreCaseContainingAndStatusIgnoreCaseContainingAndPriorityIgnoreCaseContainingOrderByDateDesc(
+            String title, String status, String priority, Pageable pages); //Busca os tickets por titulo, status e prioridade e ordena por data
+
+    Page<Ticket> findByTitleIgnoreCaseContainingAndStatusIgnoreCaseContainingAndPriorityIgnoreCaseContainingAndUserIdOrderByDateDesc(
+            String title, String status, String priority, String userId, Pageable pages); //Busca todos os tickets por titulo, status e prioridade de um usuario e ordena por data
+
+    Page<Ticket> findByTitleIgnoreCaseContainingAndStatusIgnoreCaseContainingAndPriorityIgnoreCaseContainingAndAssignedUserIdOrderByDateDesc(
+            String title, String status, String priority, String assignedUserId, Pageable pages); //Busca todos os tickets por titulo, status e prioridade de um tecnico e ordena por data
+
+    Page<Ticket> findByNumber(Integer number, Pageable pages); //Busca os tickets por numero
+}
