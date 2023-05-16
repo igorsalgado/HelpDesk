@@ -1,8 +1,8 @@
-package com.dev.helpdesk.service.impl;
+package com.dev.helpdesk.api.service.impl;
 
-import com.dev.helpdesk.model.User;
-import com.dev.helpdesk.repository.UserRepository;
-import com.dev.helpdesk.service.UserService;
+import com.dev.helpdesk.api.service.UserService;
+import com.dev.helpdesk.api.model.User;
+import com.dev.helpdesk.api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

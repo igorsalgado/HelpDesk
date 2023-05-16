@@ -1,7 +1,7 @@
-package com.dev.helpdesk.model;
+package com.dev.helpdesk.api.model;
 
-import com.dev.helpdesk.enums.PriorityEnum;
-import com.dev.helpdesk.enums.StatusEnum;
+import com.dev.helpdesk.api.model.enums.PriorityEnum;
+import com.dev.helpdesk.api.model.enums.StatusEnum;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;

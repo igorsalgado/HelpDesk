@@ -1,7 +1,7 @@
-package com.dev.helpdesk.model;
+package com.dev.helpdesk.api.model;
 
 
-import com.dev.helpdesk.enums.ProfileEnum;
+import com.dev.helpdesk.api.model.enums.ProfileEnum;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;

@@ -1,4 +1,4 @@
-package com.dev.helpdesk.enums;
+package com.dev.helpdesk.api.model.enums;
 
 public enum PriorityEnum {
     HIGH,

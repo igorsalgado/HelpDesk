@@ -1,4 +1,4 @@
-package com.dev.helpdesk.security.jwt;
+package com.dev.helpdesk.api.security.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

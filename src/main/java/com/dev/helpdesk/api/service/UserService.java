@@ -1,9 +1,8 @@
-package com.dev.helpdesk.service;
+package com.dev.helpdesk.api.service;
 
 
-import com.dev.helpdesk.model.User;
+import com.dev.helpdesk.api.model.User;
 import org.springframework.data.domain.Page;
-import org.springframework.stereotype.Service;
 
 
 public interface UserService {

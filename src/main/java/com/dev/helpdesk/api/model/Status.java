@@ -1,4 +1,4 @@
-package com.dev.helpdesk.model;
+package com.dev.helpdesk.api.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

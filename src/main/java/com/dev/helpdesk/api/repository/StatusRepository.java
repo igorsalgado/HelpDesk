@@ -1,6 +1,6 @@
-package com.dev.helpdesk.repository;
+package com.dev.helpdesk.api.repository;
 
-import com.dev.helpdesk.model.Status;
+import com.dev.helpdesk.api.model.Status;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
-package com.dev.helpdesk.repository;
+package com.dev.helpdesk.api.repository;
 
-import com.dev.helpdesk.model.Ticket;
+import com.dev.helpdesk.api.model.Ticket;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;

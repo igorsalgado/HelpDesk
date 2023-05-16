@@ -1,4 +1,4 @@
-package com.dev.helpdesk.security.jwt;
+package com.dev.helpdesk.api.security.jwt;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
